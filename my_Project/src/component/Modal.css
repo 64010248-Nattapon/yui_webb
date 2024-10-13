@@ -1,0 +1,138 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* พื้นหลังสีดำพร้อมความโปร่งใส */
+  }
+  
+  .modal.show {
+    display: block;
+    
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 600px; /* ขยายความกว้างของ Modal */
+    border-radius: 8px;
+    border: 4px solid #00bfff;
+  }
+
+  .modal-input-group input,
+  .modal-dropdown {
+    width: calc(100% - 120px);
+    padding: 8px;
+    border: 2px solid #00bfff;
+    border-radius: 4px;
+    background: #ffffff;
+    color: #000;
+    margin-bottom: 20px;
+  }
+
+  .modal-dropdown {
+    width: 106.5%;
+  }
+
+
+  .modal-input-group input:focus,
+  .modal-dropdown:focus
+  {
+    border: 2px solid #00bfff;
+    outline: none;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 10px; */
+  }
+  
+  .ng-title {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .close {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .modal-body {
+    display: flex; 
+  }
+  
+  .input-section {
+    flex: 2; /* ให้ input-section ใช้พื้นที่ 2 ส่วน */
+    margin-right: 20px;
+    color: black;
+  }
+  
+  .list-group {
+    flex: 1; 
+    padding: 15px;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+  }
+  
+  .modal-body .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .modal-body label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .modal-body input,
+  .dropdown {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #00bfff;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .add-more {
+    padding: 8px 16px;
+    background-color: #00bfff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .add-more:hover {
+    background-color: #009acd;
+  }
+  
+  .list-group p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .modal-footer {
+    text-align: center;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    background-color: #00bfff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .submit-button:hover {
+    background-color: #009acd;
+  }
+  

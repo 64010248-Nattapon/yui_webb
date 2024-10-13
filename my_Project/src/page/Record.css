@@ -1,0 +1,164 @@
+
+.record-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  /* margin-bottom: 0; */
+}
+
+.record-header-title {
+  margin-left: 100px;
+  
+}
+
+
+.record-header{
+  display: flex;
+  background-color: #4c4de2;
+  /* padding: 10px; */
+  /* text-align: center; */
+  color: white;
+  /* border: 2px solid #ccc; */
+  border-top: 2px solid #ccc;
+  width: 100%;
+  
+  /* border-bottom: 2px solid #ccc; */
+}
+.record-menu-icon {
+  cursor: pointer;
+  /* width: 50px; */
+  font-size: 40px;
+  /* padding-top: 10px; */
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  color: white;
+  z-index: 1000;
+}
+
+
+.record-id{
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.record-content {
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.record-form-section {
+  width: 100%;
+  background: #ffffff;
+  /* padding: 20px; */
+  border-radius: 8px;
+  /*border: 2px solid #00bfff; /* ขอบสีฟ้าตามตัวอย่าง */
+  margin-bottom: 0;
+  font-size: 24px;
+  margin-top: 5%;
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+}
+
+.record-input-group {
+  margin-bottom: 60px;
+  width: 100%;
+  margin-left: 100px;
+}
+
+.record-input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.record-input-group input,
+.record-dropdown {
+  width: 100%;
+  padding: 8px;
+  border: 4px solid #00bfff; /* เพิ่มขอบสีฟ้า */
+  border-radius: 4px;
+  background: #ffffff;
+  color: #000;
+  border-radius: 10px; 
+  font-size: 24px;
+
+}
+
+.record-input-group input:focus,
+.record-dropdown:focus {
+  border: 4px solid #00bfff;
+  outline: none ;
+}
+
+.record-dropdown {
+  /* height: 60px;
+  background: #ffffff;
+  color: #000;
+  font-size: 18px; */
+  cursor: pointer;
+  width: 55%;
+}
+
+.record-wasted-section {
+  background-color: #ffffff;
+  width: 50%;
+}
+
+.record-input-group small {
+  width: 100%;
+}
+
+
+
+.record-submit-button:hover {
+  background-color: #009acd;      /* เปลี่ยนสีปุ่มเมื่อ hover */
+  border: 2px solid #009acd;
+}
+
+.record-plusIcon {
+  position: absolute;
+  margin-left: 60%;
+  margin-top: 50px;
+  /* margin-right: 80px; */
+  cursor: pointer;
+}
+
+.record-plusIcon img {
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  
+}
+
+.record-button-group {
+  display: flex;
+  /* margin-left: 50%; */
+  /* margin-right: 100px; */
+  justify-items: center;
+  justify-content: center;
+  width: 100%;
+
+  /* justify-content: space-between; */
+}
+
+.record-submit-button {
+  width: 20%;                    /* กำหนดขนาดของปุ่มให้แคบลง */
+  padding: 10px 20px;
+  background-color: #00bfff;      /* สีพื้นหลังเป็นสีฟ้า */
+  border: 2px solid #00bfff;      /* ขอบสีฟ้า */
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 24px;
+}

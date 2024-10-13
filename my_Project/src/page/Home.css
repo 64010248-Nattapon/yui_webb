@@ -1,0 +1,171 @@
+/* กำหนดสไตล์สำหรับพื้นหลัง */
+.background {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* display: flex; */
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.header {
+  background-color: #4c4de2;
+  padding: 10px;
+  /* text-align: center; */
+  color: white;
+  /* border: 2px solid #ccc; */
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+.header-title {
+  margin: 0;
+  margin-left: 40px;
+}
+
+/* Container หลัก */
+.container {
+  display: flex;
+  height: 93.6vh;
+  width: auto;
+  background-color: #4c4de2;
+  justify-content: center; /* จัดให้อยู่ตรงกลางในแนวนอน */
+  align-items: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+}
+
+
+/* Sidebar */
+.menu-icon {
+  cursor: pointer;
+  /* width: 50px; */
+  font-size: 30px;
+  padding-top: 60px;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  color: white;
+  z-index: 1000;
+
+}
+
+.menu-icon-profile {
+  cursor: pointer;
+  /* width: 50px; */
+  font-size: 30px;
+  padding-top: 140px;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+
+}
+
+.sidebar {
+  background-color: #4343b4;
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -250px; /* ซ่อน Sidebar */
+  transition: 0.3s;
+  padding-top: 60px;
+  color: white;
+  
+}
+
+.sidebar.open {
+  left: 0; /* แสดง Sidebar */
+}
+
+.profile-icon {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.profile-icon i {
+  font-size: 50px;
+}
+
+.sidebar .menu-list {
+  padding: 10px;
+  
+}
+
+.sidebar .menu-list ul {
+  list-style-type: none;
+  /* padding: 0; */
+}
+
+.sidebar .menu-list li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.sidebar .menu-list li:hover {
+  background-color: #575757;
+  outline: none;
+}
+
+/* กำหนดสไตล์สำหรับเนื้อหา */
+.content {
+  margin-left: 60px; /* ระยะห่างจาก Sidebar */
+  /* padding: 20px; */
+  /*width: calc(100% - 60px); /* คำนวณขนาดเนื้อหาเมื่อ Sidebar แสดงผล */
+  width: 90vw;
+  height: 80vh;
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+
+}
+
+.text-box {
+  /* color: #4c4de2; */
+  background-color: #ffffff;
+  border-radius: 20px;
+  height: 80vh;
+  width: 90%;
+  margin-top: 10px;
+}
+
+.text-box .title {
+  margin-bottom: 20px;
+}
+
+.menu-list {
+  /*padding-left: 20px; /* ระยะห่างจากขอบซ้าย */
+}
+
+.menu-list li {
+  font-size: 32px;
+  color: #0073e6; /* สีตัวอักษรของรายการปกติ */
+  margin-bottom: 10px; /* ระยะห่างระหว่างรายการ */
+  cursor: pointer;
+}
+
+/* กำหนดสไตล์สำหรับหัวข้อย่อย */
+.sub-menu {
+  padding-left: 100px; /* ระยะห่างจากขอบซ้ายมากกว่ารายการหลัก */
+  list-style-type: disc; /* เปลี่ยนรูปแบบ bullet point */
+}
+
+.sub-menu li {
+  color: #00bfff; /* กำหนดสีให้หัวข้อย่อยเป็นสีฟ้า */
+  margin-bottom: 5px; /* ระยะห่างระหว่างหัวข้อย่อย */
+  
+}
+
+/* กำหนดสไตล์เฉพาะสำหรับรายการที่ถูกเน้น */
+.menu-list li.highlight {
+  font-size: 32px;
+  color: #4c3ba3; /* สีเฉพาะของ highlight */
+  font-weight: bold;
+  list-style-type: none;
+  
+}
+
+/* กำหนดสีของคำว่า LOGIN */
+.menu-list li .login-warning {
+  color: #ff6347; /* สีแดง */
+  font-weight: bold;
+}
